@@ -1,39 +1,23 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
-import Form from "./components/Form";
+import ClassForm from './Form';
  
-
-const config = {
-  api: `${process.env.REACT_APP_API}`,
-  title: 'Contact Me',
-  successMessage: 'Thank you for contacting me.',
-  errorMessage: 'Sorry we have some problems.',
-  fields:{
-    firstName: '',
-    lastName: '',
-    email: '',
-    msg: ''
-  },
-  fieldsConfig:  [
-   { id: 1, label: 'First Name', fieldName: 'firstName', type: 'text',placeholder:'Your First Name', isRequired: true , className:'first-name-field'},
-   { id: 2, label: 'Last Name', fieldName: 'lastName', type: 'text', placeholder: 'Your Last Name', isRequired: true , className:'last-name-field'},
-   { id: 3, label: 'Email', fieldName: 'email', type: 'email', placeholder: ' Your Email', isRequired: true , className:'email-field'},
-   { id: 4, label: 'Message', fieldName: 'msg', type: 'textarea',placeholder:'Write something.....', isRequired: true , className:'message-field'}
-  ]
-};
-
 class Contact extends Component {
   render() {
     return (
       <div>
-       <h2>Contact Us</h2>
-       <br />
-       <Form />
+        <h2>Contact Us</h2>
+        <br />
+        <ClassForm />
+        <br />
+        <div class="hr"></div>
+        <br />
+        <h2>About the Generator</h2>
+        <br />
+        <p>Our generator uses an API from Dog.CEO. This API contains the internet's biggest collection of open source dog pictures. If you're interested you can find their site <a href="https://dog.ceo/dog-api/">here</a>.</p> 
+        <p>You can also submit your own dog pictures to them!</p>
       </div>
     );
   }
 }
  
 export default Contact;
-
-ReactDOM.render(<Form config={config} />);

@@ -12,7 +12,7 @@ class Main extends Component {
   render() {
     return (
         <BrowserRouter>
-            <div>
+            <div class="test">
             <h1>Random Dog Generator</h1>
             <ul className="header">
                 <li><NavLink exact to="/">Home</NavLink></li>
