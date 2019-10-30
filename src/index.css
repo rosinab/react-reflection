@@ -37,3 +37,8 @@ body {
   .active {
     background-color: #FF99A8;
   }
+
+  .impact {
+    font-weight: bold;
+    color: #694f5d;
+  }
