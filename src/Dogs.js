@@ -21,7 +21,12 @@ class Dogs extends Component {
         <button onClick={getRandomImage}class="submit">Click for a random dog</button><br />
         <br />
         <br />
-        <img id="dogImage" alt="a dog" src="https://dog.ceo/img/dog-api-logo.svg"></img>
+        <img id="dogImage" alt="a dog" height="350px" src="https://dog.ceo/img/dog-api-logo.svg"></img>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
     );
   }
